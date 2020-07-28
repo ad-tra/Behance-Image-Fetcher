@@ -24,7 +24,7 @@ private static int boardCount;
 
 public static void main (String[] args) throws InterruptedException
 {
-	saveBoards("C:\\Users\\adam\\Documents\\art\\i9tisad_belfa9i","https://www.behance.net/kiuchi");
+	saveBoards("//put your file path here","https://www.behance.net/kiuchi");
 }
 
 
