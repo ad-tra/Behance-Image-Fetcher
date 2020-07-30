@@ -105,7 +105,7 @@ public static void saveImages(String filePath)
 		imgCounter=0;
 		}
 	}
-}
+ }
 
 
 }
