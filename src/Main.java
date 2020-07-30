@@ -90,7 +90,7 @@ public static void saveImages(String filePath)
 	while(imgCounter>0){
 	try {
 		
-		WebElement imageWebElement = driver.findElement(By.xpath("//img[contains(@src, 'project_modules')])["+imgCounter+"]"));
+		WebElement imageWebElement = driver.findElement(By.xpath("(//img[contains(@src, 'project_modules')])["+imgCounter+"]"));
 		Thread.sleep(500);
 		URL url = new URL(imageWebElement.getAttribute("src"));
 		BufferedImage image = ImageIO.read(url);
