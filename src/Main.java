@@ -85,12 +85,12 @@ public static void saveBoards(String filePath, String profileURL) throws Interru
 
 public static void saveImages(String filePath)
 {
-	int imgCounter = 2;
+	int imgCounter = 1;
 	
 	while(imgCounter>0){
 	try {
 		
-		WebElement imageWebElement = driver.findElement(By.xpath("//div["+imgCounter+"][@class='Project-projectModuleContainer-2q2 Preview__project--topMargin qa-project-module-container e2e-Project-module-container']/div[1]/div/div/div/img"));
+		WebElement imageWebElement = driver.findElement(By.xpath("//img[contains(@src, 'project_modules')])["+imgCounter+"]"));
 		Thread.sleep(500);
 		URL url = new URL(imageWebElement.getAttribute("src"));
 		BufferedImage image = ImageIO.read(url);
